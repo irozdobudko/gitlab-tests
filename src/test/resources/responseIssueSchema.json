@@ -1,0 +1,548 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1665955092.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "iid",
+    "project_id",
+    "title",
+    "description",
+    "state",
+    "created_at",
+    "updated_at",
+    "closed_at",
+    "closed_by",
+    "labels",
+    "milestone",
+    "assignees",
+    "author",
+    "type",
+    "assignee",
+    "user_notes_count",
+    "merge_requests_count",
+    "upvotes",
+    "downvotes",
+    "due_date",
+    "confidential",
+    "discussion_locked",
+    "issue_type",
+    "web_url",
+    "time_stats",
+    "task_completion_status",
+    "blocking_issues_count",
+    "has_tasks",
+    "_links",
+    "references",
+    "severity",
+    "subscribed",
+    "moved_to_id",
+    "service_desk_reply_to"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        116968794
+      ],
+      "default": 0
+    },
+    "iid": {
+      "$id": "#root/iid",
+      "title": "Iid",
+      "type": "integer",
+      "examples": [
+        33
+      ],
+      "default": 0
+    },
+    "project_id": {
+      "$id": "#root/project_id",
+      "title": "Project_id",
+      "type": "integer",
+      "examples": [
+        40224967
+      ],
+      "default": 0
+    },
+    "title": {
+      "$id": "#root/title",
+      "title": "Title",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "ISSUE SUBJECT il53wn2q9m927fr743821e1o7v9f1wz7w7c89d13"
+      ],
+      "pattern": "^.*$"
+    },
+    "description": {
+      "$id": "#root/description",
+      "title": "Description",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "8e4ocsysfs5oghrsavvk7hirnu728s56gw86vw807sirmxu8dr"
+      ],
+      "pattern": "^.*$"
+    },
+    "state": {
+      "$id": "#root/state",
+      "title": "State",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "opened"
+      ],
+      "pattern": "^.*$"
+    },
+    "created_at": {
+      "$id": "#root/created_at",
+      "title": "Created_at",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2022-10-16T21:17:43.581Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "updated_at": {
+      "$id": "#root/updated_at",
+      "title": "Updated_at",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2022-10-16T21:17:43.581Z"
+      ],
+      "pattern": "^.*$"
+    },
+    "closed_at": {
+      "$id": "#root/closed_at",
+      "title": "Closed_at",
+      "type": "null",
+      "default": null
+    },
+    "closed_by": {
+      "$id": "#root/closed_by",
+      "title": "Closed_by",
+      "type": "null",
+      "default": null
+    },
+    "labels": {
+      "$id": "#root/labels",
+      "title": "Labels",
+      "type": "array",
+      "default": []
+    },
+    "milestone": {
+      "$id": "#root/milestone",
+      "title": "Milestone",
+      "type": "null",
+      "default": null
+    },
+    "assignees": {
+      "$id": "#root/assignees",
+      "title": "Assignees",
+      "type": "array",
+      "default": []
+    },
+    "author": {
+      "$id": "#root/author",
+      "title": "Author",
+      "type": "object",
+      "required": [
+        "id",
+        "username",
+        "name",
+        "state",
+        "avatar_url",
+        "web_url"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/author/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            12791586
+          ],
+          "default": 0
+        },
+        "username": {
+          "$id": "#root/author/username",
+          "title": "Username",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "i.rozdobudko"
+          ],
+          "pattern": "^.*$"
+        },
+        "name": {
+          "$id": "#root/author/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Igor Rozdobudko"
+          ],
+          "pattern": "^.*$"
+        },
+        "state": {
+          "$id": "#root/author/state",
+          "title": "State",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "active"
+          ],
+          "pattern": "^.*$"
+        },
+        "avatar_url": {
+          "$id": "#root/author/avatar_url",
+          "title": "Avatar_url",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://secure.gravatar.com/avatar/217c45987da0e15452d2973b78cde055?s=80&d=identicon"
+          ],
+          "pattern": "^.*$"
+        },
+        "web_url": {
+          "$id": "#root/author/web_url",
+          "title": "Web_url",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://gitlab.com/i.rozdobudko"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "type": {
+      "$id": "#root/type",
+      "title": "Type",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "ISSUE"
+      ],
+      "pattern": "^.*$"
+    },
+    "assignee": {
+      "$id": "#root/assignee",
+      "title": "Assignee",
+      "type": "null",
+      "default": null
+    },
+    "user_notes_count": {
+      "$id": "#root/user_notes_count",
+      "title": "User_notes_count",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "merge_requests_count": {
+      "$id": "#root/merge_requests_count",
+      "title": "Merge_requests_count",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "upvotes": {
+      "$id": "#root/upvotes",
+      "title": "Upvotes",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "downvotes": {
+      "$id": "#root/downvotes",
+      "title": "Downvotes",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "due_date": {
+      "$id": "#root/due_date",
+      "title": "Due_date",
+      "type": "null",
+      "default": null
+    },
+    "confidential": {
+      "$id": "#root/confidential",
+      "title": "Confidential",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "discussion_locked": {
+      "$id": "#root/discussion_locked",
+      "title": "Discussion_locked",
+      "type": "null",
+      "default": null
+    },
+    "issue_type": {
+      "$id": "#root/issue_type",
+      "title": "Issue_type",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "issue"
+      ],
+      "pattern": "^.*$"
+    },
+    "web_url": {
+      "$id": "#root/web_url",
+      "title": "Web_url",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "https://gitlab.com/i.rozdobudko/test_task/-/issues/33"
+      ],
+      "pattern": "^.*$"
+    },
+    "time_stats": {
+      "$id": "#root/time_stats",
+      "title": "Time_stats",
+      "type": "object",
+      "required": [
+        "time_estimate",
+        "total_time_spent",
+        "human_time_estimate",
+        "human_total_time_spent"
+      ],
+      "properties": {
+        "time_estimate": {
+          "$id": "#root/time_stats/time_estimate",
+          "title": "Time_estimate",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "total_time_spent": {
+          "$id": "#root/time_stats/total_time_spent",
+          "title": "Total_time_spent",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "human_time_estimate": {
+          "$id": "#root/time_stats/human_time_estimate",
+          "title": "Human_time_estimate",
+          "type": "null",
+          "default": null
+        },
+        "human_total_time_spent": {
+          "$id": "#root/time_stats/human_total_time_spent",
+          "title": "Human_total_time_spent",
+          "type": "null",
+          "default": null
+        }
+      }
+    }
+  ,
+    "task_completion_status": {
+      "$id": "#root/task_completion_status",
+      "title": "Task_completion_status",
+      "type": "object",
+      "required": [
+        "count",
+        "completed_count"
+      ],
+      "properties": {
+        "count": {
+          "$id": "#root/task_completion_status/count",
+          "title": "Count",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "completed_count": {
+          "$id": "#root/task_completion_status/completed_count",
+          "title": "Completed_count",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        }
+      }
+    }
+  ,
+    "blocking_issues_count": {
+      "$id": "#root/blocking_issues_count",
+      "title": "Blocking_issues_count",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "has_tasks": {
+      "$id": "#root/has_tasks",
+      "title": "Has_tasks",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "_links": {
+      "$id": "#root/_links",
+      "title": "_links",
+      "type": "object",
+      "required": [
+        "self",
+        "notes",
+        "award_emoji",
+        "project",
+        "closed_as_duplicate_of"
+      ],
+      "properties": {
+        "self": {
+          "$id": "#root/_links/self",
+          "title": "Self",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://gitlab.com/api/v4/projects/40224967/issues/33"
+          ],
+          "pattern": "^.*$"
+        },
+        "notes": {
+          "$id": "#root/_links/notes",
+          "title": "Notes",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://gitlab.com/api/v4/projects/40224967/issues/33/notes"
+          ],
+          "pattern": "^.*$"
+        },
+        "award_emoji": {
+          "$id": "#root/_links/award_emoji",
+          "title": "Award_emoji",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://gitlab.com/api/v4/projects/40224967/issues/33/award_emoji"
+          ],
+          "pattern": "^.*$"
+        },
+        "project": {
+          "$id": "#root/_links/project",
+          "title": "Project",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "https://gitlab.com/api/v4/projects/40224967"
+          ],
+          "pattern": "^.*$"
+        },
+        "closed_as_duplicate_of": {
+          "$id": "#root/_links/closed_as_duplicate_of",
+          "title": "Closed_as_duplicate_of",
+          "type": "null",
+          "default": null
+        }
+      }
+    }
+  ,
+    "references": {
+      "$id": "#root/references",
+      "title": "References",
+      "type": "object",
+      "required": [
+        "short",
+        "relative",
+        "full"
+      ],
+      "properties": {
+        "short": {
+          "$id": "#root/references/short",
+          "title": "Short",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "#33"
+          ],
+          "pattern": "^.*$"
+        },
+        "relative": {
+          "$id": "#root/references/relative",
+          "title": "Relative",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "#33"
+          ],
+          "pattern": "^.*$"
+        },
+        "full": {
+          "$id": "#root/references/full",
+          "title": "Full",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "i.rozdobudko/test_task#33"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "severity": {
+      "$id": "#root/severity",
+      "title": "Severity",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "UNKNOWN"
+      ],
+      "pattern": "^.*$"
+    },
+    "subscribed": {
+      "$id": "#root/subscribed",
+      "title": "Subscribed",
+      "type": "boolean",
+      "examples": [
+        true
+      ],
+      "default": true
+    },
+    "moved_to_id": {
+      "$id": "#root/moved_to_id",
+      "title": "Moved_to_id",
+      "type": "null",
+      "default": null
+    },
+    "service_desk_reply_to": {
+      "$id": "#root/service_desk_reply_to",
+      "title": "Service_desk_reply_to",
+      "type": "null",
+      "default": null
+    }
+  }
+}
